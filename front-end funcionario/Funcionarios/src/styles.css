@@ -1,1 +1,14 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css"
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.noscript {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
