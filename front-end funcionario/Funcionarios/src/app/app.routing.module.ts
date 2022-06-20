@@ -11,8 +11,7 @@ const routes: Routes = [
          loadChildren: () => {
             return import('./funcionario/funcionario.module')
            .then((m) =>{
-            return m.FuncionarioModule
-           
+            return m.FuncionarioModule   
     })
    }
 }

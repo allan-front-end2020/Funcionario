@@ -1,1 +1,28 @@
-<p>novo-funcionario works!</p>
+<div class="flex-container">
+
+    <mat-card>
+        <h1>Faça seu cadastro</h1>
+        <form action='' id="main-form">
+            <mat-form-field appearance="outline">
+                <mat-label>Nome</mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Telefone</mat-label>
+                <input type="text" matInput mask="(00)0000-0000">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Crie sua senha</mat-label>
+                <input type="password" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Confirme sua senha</mat-label>
+                <input type="password" matInput>
+            </mat-form-field>
+            <button mat-raised-button color='accent' type='submit'> Cadastrar</button>
+
+        </form>
+    </mat-card>
+
+</div>
