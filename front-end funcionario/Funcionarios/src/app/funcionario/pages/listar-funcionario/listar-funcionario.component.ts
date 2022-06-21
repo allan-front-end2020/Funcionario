@@ -40,7 +40,7 @@ export class ListarFuncionarioComponent implements OnInit {
     },
   ]
 
-  colums: string[]=['id', 'nome','telefone', 'saldo']
+  columns: string[]=['id', 'nome','telefone', 'saldo']
 
   constructor() { }
 

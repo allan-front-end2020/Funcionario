@@ -1,3 +1,14 @@
 .fun-table {
     width: 90%;
 }
+
+th.mat-sort-header-sorted {
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 108px;
+    font-size: 52px;
+    margin-bottom: -38px;
+}
