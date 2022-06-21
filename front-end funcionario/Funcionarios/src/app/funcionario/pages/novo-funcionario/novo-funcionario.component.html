@@ -2,23 +2,23 @@
 
     <mat-card>
         <h1>Faça seu cadastro</h1>
-        <form action='' id="main-form">
+        <form action='' id="main-form" class="form-group">
             <mat-form-field appearance="outline">
                 <mat-label>Nome</mat-label>
-                <input type="text" matInput>
+                <input type="text" matInput required>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Telefone</mat-label>
-                <input type="text" matInput mask="(00)0000-0000">
+                <input type="text" placeholder="(xx)xxxxx-xxxx" matInput mask="(00)0000-0000" required>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Crie sua senha</mat-label>
-                <input type="password" matInput>
+                <input type="password" matInput required>
             </mat-form-field>
 
             <mat-form-field appearance="outline">
                 <mat-label>Confirme sua senha</mat-label>
-                <input type="password" matInput>
+                <input type="password" matInput required>
             </mat-form-field>
             <button mat-raised-button color='accent' type='submit'> Cadastrar</button>
 
