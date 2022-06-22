@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NovoFuncionarioComponent implements OnInit {
 
+  myImage:string='/src/app/img/';
   constructor() { }
 
   ngOnInit(): void {

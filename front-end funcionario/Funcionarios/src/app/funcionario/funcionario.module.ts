@@ -6,6 +6,8 @@ import { NovoFuncionarioComponent } from './pages/novo-funcionario/novo-funciona
 import { MaterialModule } from '../material.module'
 import { NgxMaskModule } from 'ngx-mask';
 import { ListarFuncionarioComponent } from './pages/listar-funcionario/listar-funcionario.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FuncionarioHttpService } from './services/funcionario-http.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,12 @@ import { ListarFuncionarioComponent } from './pages/listar-funcionario/listar-fu
     CommonModule,
     FuncionarioRoutingModule,
     MaterialModule,
-    NgxMaskModule.forChild()
+    NgxMaskModule.forChild(),
+    HttpClientModule
+  ],
+  providers:[
+    FuncionarioHttpService
+
   ]
 })
 export class FuncionarioModule { }

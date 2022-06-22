@@ -13,7 +13,7 @@ export class ListarFuncionarioComponent implements OnInit {
       id:1,
       nome:'Allan',
       telefone: 'allan@allan.com',
-      saldo:'100.00'
+      saldo:'R$:100.00'
 
     },
 
@@ -21,21 +21,21 @@ export class ListarFuncionarioComponent implements OnInit {
       id:2,
       nome:'Douglas',
       telefone: 'allan@allan.com',
-      saldo:'13.000.00'
+      saldo:'R$:13.000.00'
 
     },
     {
       id:3,
       nome:'Santos',
       telefone: 'allan@allan.com',
-      saldo:'500.00'
+      saldo:'R$:500.00'
 
     },
      {
       id:4,
       nome:'Tavares',
       telefone: 'allan@allan.com',
-      saldo:'10.000.00'
+      saldo:' R$:10.000.00'
 
     },
   ]
