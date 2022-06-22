@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-novo-funcionario',
@@ -7,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NovoFuncionarioComponent implements OnInit {
 
-  myImage:string='/src/app/img/';
-  constructor() { }
+ funcionario : FormGroup = this.fb.group({
+   nome: ['',[Validators.required]],
+   email: ['', [Validators.required]],
+   telefone: ['',[Validators.required]],
+   senha: ['',[Validators.required]],
+   confirmeSenha: ['', [Validators.required]],
+
+ })
+
+  constructor(
+    private fb:FormBuilder
+  ) { }
 
   ngOnInit(): void {
   }

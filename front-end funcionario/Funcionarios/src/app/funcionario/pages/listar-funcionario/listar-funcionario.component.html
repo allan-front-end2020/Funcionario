@@ -1,16 +1,13 @@
-<H1>
-    Controle de usuarios</H1>
-
 <div class="flex-container">
 
 
 
     <table mat-table [dataSource]="funcionarios" class='fun-table mat-elevation-z8'>
-        <ng-container matColumnDef="id">
+        <ng-container matColumnDef="idFuncionario">
             <th mat-header-cell *matHeaderCellDef>
                 <h2><span>ID</span></h2>
             </th>
-            <td mat-cell *matCellDef="let fun">{{fun.id}}</td>
+            <td mat-cell *matCellDef="let fun">{{fun.idFuncionario}}</td>
         </ng-container>
 
         <ng-container matColumnDef="nome">
@@ -19,6 +16,14 @@
                 <h2><span>Nome:</span></h2>
             </th>
             <td mat-cell *matCellDef="let fun">{{fun.nome}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="email">
+
+            <th mat-header-cell *matHeaderCellDef>
+                <h2><span>E-mail:</span></h2>
+            </th>
+            <td mat-cell *matCellDef="let fun">{{fun.email}}</td>
         </ng-container>
         <ng-container matColumnDef="telefone">
             <th mat-header-cell *matHeaderCellDef>

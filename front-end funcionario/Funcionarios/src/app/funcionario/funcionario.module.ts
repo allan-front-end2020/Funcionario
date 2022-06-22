@@ -8,6 +8,7 @@ import { NgxMaskModule } from 'ngx-mask';
 import { ListarFuncionarioComponent } from './pages/listar-funcionario/listar-funcionario.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FuncionarioHttpService } from './services/funcionario-http.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FuncionarioHttpService } from './services/funcionario-http.service';
     FuncionarioRoutingModule,
     MaterialModule,
     NgxMaskModule.forChild(),
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers:[
     FuncionarioHttpService
